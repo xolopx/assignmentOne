@@ -1,0 +1,1 @@
+/usr/bin/c++.exe -g  -Wl,--enable-auto-import CMakeFiles/AssLion.dir/main.cpp.o CMakeFiles/AssLion.dir/point.cpp.o CMakeFiles/AssLion.dir/polygon.cpp.o  -o AssLion.exe -Wl,--out-implib,libAssLion.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
