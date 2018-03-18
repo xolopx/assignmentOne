@@ -1,38 +1,29 @@
 #include <iostream>
 #include "polygon.h"
 #include "node.h"
-#include "point.h"
 
 
 using namespace tom_ass1;
 
 int main() {
 
-    //Create 3 polygons
-    polygon* rock = new polygon(1);
-    polygon* jazz = new polygon(3);
-    polygon* funk = new polygon(5);
+    polygon* albert = new polygon(5);
 
-    //Store the 3 polygons into 3 nodes.
-    node<polygon>* nodeA = new node<polygon>(*rock);
-    node<polygon>* nodeB = new node<polygon>(*jazz);
-    node<polygon>* nodeC = new node<polygon>(*funk);
+    albert->getPoint(0)->setPoints(1000,0);
+    albert->getPoint(1)->setPoints(47,100);
+    albert->getPoint(2)->setPoints(1,1);
+    albert->getPoint(3)->setPoints(43,-100);
+    albert->getPoint(4)->setPoints(-100.09,0);
 
-    //Make it a circle by joining the nodes together using set_previous & set_next;
-    nodeA->set_next(nodeB);
-    nodeA->set_previous(nodeC);
+    //creating new node, let's see what we can get out of it.
+    node<polygon>* smoth = new node<polygon>(*albert);
 
-    nodeB->set_next(nodeC);
-    nodeB->set_previous(nodeA);
-
-    nodeC->set_next(nodeA);
-    nodeC->set_previous(nodeB);
-
-    std::cout<<nodeC->get_next()->get_data()->polyToString()<<std::endl;
+//    smoth->set_data(*albert);
 
 
 
+//    std::cout<<smoth->get_data().polyToString()<<std::endl;
+//    std::cout<<"This is the closest distant to the origin: " <<albert->closestOrigin()<<std::endl;
 
-    
     return 0;
 }
