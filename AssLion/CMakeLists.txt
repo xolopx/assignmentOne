@@ -4,4 +4,4 @@ project(AssLion)
 
 set(CMAKE_CXX_STANDARD 11)
 
-add_executable(AssLion main.cpp point.cpp point.h polygon.h polygon.cpp node.tpp node.h)
+add_executable(AssLion main.cpp point.cpp point.h polygon.h polygon.cpp node.tpp node.h MyPolygons.h MyPolygons.tpp)

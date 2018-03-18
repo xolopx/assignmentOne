@@ -20,7 +20,7 @@ namespace tom_ass1
 			
 			//CONSTRUCTORS
 
-			//node();			//No arguments
+			node();			//No arguments
 			explicit node(const object& init_data);	//One argument
 
 			

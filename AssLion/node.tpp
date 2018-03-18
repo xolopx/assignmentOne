@@ -5,13 +5,13 @@ namespace tom_ass1
 {
 	//CONSTRUCTOR
 
-//	template <typename object>
-//	node<object>::node()
-//	{
-//		data = NULL;
-//		next = NULL;
-//		previous = NULL;
-//	}
+	template <typename object>
+	node<object>::node()
+	{
+		data = NULL;
+		next = NULL;
+		previous = NULL;
+	}
 
 	template <typename object>
 	node<object>::node(const object& init_data)	
