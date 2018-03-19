@@ -8,9 +8,9 @@ namespace tom_ass1
 	template <typename object>
 	node<object>::node()
 	{
-		data = NULL;
-		next = NULL;
-		previous = NULL;
+//		data = NULL;
+//		next = NULL;
+//		previous = NULL;
 	}
 
 	template <typename object>
@@ -31,7 +31,7 @@ namespace tom_ass1
 	void node<object>::set_previous(node<object>* previous_link) 	{previous = previous_link;}
 	
 	template <typename object>
-	object* node<object>::get_data() 							{return &data;}
+	object* node<object>::get_data() 								{return &data;}
 	
 	template <typename object>
 	const node<object>* node<object>::get_previous() const			{return previous;}

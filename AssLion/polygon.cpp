@@ -63,20 +63,20 @@ namespace tom_ass1
 	//Calculates the area inside of the polygon.
 	double polygon::calcArea()
 	{
-		double area = 0;
-        double interimResult = 0;
-        //"n" form the formula is 1 more than the number of points on the polygon. This is not considered anywhere so we
-        // modify the formula to be (n-1) instead of (n-2).
+    double area = 0;
+    double interimResult = 0;
+    //"n" form the formula is 1 more than the number of points on the polygon. This is not considered anywhere so we
+    // modify the formula to be (n-1) instead of (n-2).
 
-		for (int i = 0; i < (pointNum); i++)
-		{
-            interimResult = abs((sequence[i+1].getX()+sequence[i].getX())*(sequence[i+1].getY()-sequence[i].getY()));
+    for (int i = 0; i < (pointNum); i++)
+{
+    interimResult = (sequence[i+1].getX()+sequence[i].getX())*(sequence[i+1].getY()-sequence[i].getY());
 //            std::cout<< interimResult<<std::endl;
-			area += interimResult;
-		}
+    area += interimResult;
+}
 
-		return (0.5*(area));
-	}
+return (0.5*abs(area));
+}
 
     //Returns the distance of the point closest to the origin. For some reason.
     double polygon::closestOrigin()

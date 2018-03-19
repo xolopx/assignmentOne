@@ -23,12 +23,25 @@ namespace tom_ass1
 //        ~MyPolygons();
 //
 //        //member functions
+
+        //adds an object to the head of the list. This object is now the new head.
         void add_to_head(object& data);
+        //adds an object to the tail of the list. This object is now the new tail.
         void add_to_tail(object& data);
-//        void remove_from_head();
-//        void remove_from_tail();
-//        void forward();
-//        void back();
+        //Remove the head.
+        void remove_from_head();
+        //Remove the tail.
+        void remove_from_tail();
+        //Moves the "current" pointer forward to the next node.
+        void forward();
+        //Moves the "current" pointer backwards to the previous node.
+        void back();
+        //Resets the location of the current pointer back to the sentinel.
+        void reset();
+        //Return the node that is stored at current.
+        node<object> getNode();
+
+
 //        void move_to_head();
 //        void move_to_tail();
 //        bool empty();
@@ -45,6 +58,7 @@ namespace tom_ass1
         node<object>* sentinel = new node<object>();
         node<object>* head_ptr_;
         node<object>* tail_ptr_;
+        //This is going to chill unless moved by next() or back ().
         node<object>* current_ptr_;
         std::size_t list_length;
     };

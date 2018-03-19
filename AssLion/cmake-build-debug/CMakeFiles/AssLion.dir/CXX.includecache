@@ -6,6 +6,18 @@
 
 #IncludeRegexTransform: 
 
+/cygdrive/c/Users/tom/Google Drive/University/2018/sem 1/SENG2200/Assignments/assignmentOne/AssLion/MyPolygons.h
+cstdlib
+-
+node.h
+/cygdrive/c/Users/tom/Google Drive/University/2018/sem 1/SENG2200/Assignments/assignmentOne/AssLion/node.h
+MyPolygons.tpp
+/cygdrive/c/Users/tom/Google Drive/University/2018/sem 1/SENG2200/Assignments/assignmentOne/AssLion/MyPolygons.tpp
+
+/cygdrive/c/Users/tom/Google Drive/University/2018/sem 1/SENG2200/Assignments/assignmentOne/AssLion/MyPolygons.tpp
+MyPolygons.h
+/cygdrive/c/Users/tom/Google Drive/University/2018/sem 1/SENG2200/Assignments/assignmentOne/AssLion/MyPolygons.h
+
 /cygdrive/c/Users/tom/Google Drive/University/2018/sem 1/SENG2200/Assignments/assignmentOne/AssLion/main.cpp
 iostream
 -
@@ -13,8 +25,8 @@ polygon.h
 /cygdrive/c/Users/tom/Google Drive/University/2018/sem 1/SENG2200/Assignments/assignmentOne/AssLion/polygon.h
 node.h
 /cygdrive/c/Users/tom/Google Drive/University/2018/sem 1/SENG2200/Assignments/assignmentOne/AssLion/node.h
-point.h
-/cygdrive/c/Users/tom/Google Drive/University/2018/sem 1/SENG2200/Assignments/assignmentOne/AssLion/point.h
+MyPolygons.h
+/cygdrive/c/Users/tom/Google Drive/University/2018/sem 1/SENG2200/Assignments/assignmentOne/AssLion/MyPolygons.h
 
 /cygdrive/c/Users/tom/Google Drive/University/2018/sem 1/SENG2200/Assignments/assignmentOne/AssLion/node.h
 cstdlib

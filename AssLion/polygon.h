@@ -24,13 +24,13 @@ namespace tom_ass1
 		double calcArea();
         //Returns the distance of the point closest to the origin. For some reason.
         double closestOrigin();
+
 	private:
 		//the number of the points in the polygon
 		int pointNum;
 		//It will be an array with a size to be given on instantiation. It is a pointer.
 		//A zero-sized array!!! must be the last variable declared for some reason.
 		point* sequence;
-		
 	};
 }
 

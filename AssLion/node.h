@@ -27,8 +27,9 @@ namespace tom_ass1
 			//Member functions
 			void set_data(const object& new_data); 		
 			void set_next(node<object>* next_link);				
-			void set_previous(node<object>* previous_link); 			
-			object* get_data() ;
+			void set_previous(node<object>* previous_link);
+			//Return the data stored in the node.
+			object* get_data();
 			const node<object>* get_previous() const;
 			node<object>* get_previous();							
 			const node<object>* get_next() const; 					
