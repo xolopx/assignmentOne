@@ -17,6 +17,8 @@ namespace tom_ass1
         //We will call the list length zero because the sentinel has no data in it.
         list_length = 0;
     }
+
+    //This commented out section has the 1 argument constructor and the destructor in it.
 /*
     template<typename object>
     MyPolygons<object>::MyPolygons(object &data) {
@@ -39,121 +41,17 @@ namespace tom_ass1
     //AKA Prepend.
     template<typename object>
     void MyPolygons<object>::add_to_head(object &data) {
-
-
         //return current to sentinel.
         reset();
-        //1. create new node on heap
-        node <object> *freshNode = new node<object>(data);
-        //set the next pointer of new node to the next of the sentinel.
-
-
-        freshNode->set_next(current_ptr_->get_next());
-        //set the previous node of the new node to the sentinel. It is now positioned where the head would be. Good.
-        freshNode->set_previous(current_ptr_);
-        //Set the sentinels next's previous to be the new Node.
-        current_ptr_->get_next()->set_previous(freshNode);
-        //Set the sentinel's next to be the new node.
-        sentinel->set_next(freshNode);
-
-        //set current to the new node.
-        current_ptr_=freshNode;
-
-
-
-
-//            //2. set heads "previous" pointer to the new head and set the new nodes next pointer to the node at
-//            head_ptr_->set_previous(freshNode);
-//            freshNode->set_next(head_ptr_);
-//            //3. set the head_ptr_ (from the list) to the new node.
-//            head_ptr_ = freshNode;
-//            //4. increment the list
-//            list_length++;
-//            //5. set the temp guy to NULL. It's good practice.
-//            freshNode = NULL;
+        add(data);
     }
 
     template<typename object>
     void MyPolygons<object>::add_to_tail(object &data) {
         //Set current to the previous of the sentinel (aka the tail).
         current_ptr_ = sentinel->get_previous();
-
-        //1. create new node on heap
-        node <object> *freshNode = new node<object>(data);
-        //set the next pointer of new node to the next of the sentinel.
-        freshNode->set_next(current_ptr_->get_next());
-        //set the previous node of the new node to the sentinel. It is now positioned where the head would be. Good.
-        freshNode->set_previous(current_ptr_);
-        //Set the sentinels next's previous to be the new Node.
-        current_ptr_->get_next()->set_previous(freshNode);
-        //Set the sentinel's next to be the new node.
-        current_ptr_->set_next(freshNode);
-        //set current to the new node.
-        current_ptr_=freshNode;
-        //4. increment the list
-        list_length++;
-//
-//            //5. set the temp guy to NULL. its good practice.
-//            freshNode = NULL;
-
-    }
-
-    template<typename object>
-    void MyPolygons<object>::remove_from_head() {
-        //if list is empty do nothing. Could use an assert and terminate if someone attempts to remove node from empty list.
-        if (list_length == 0)return;
-
-        else if (list_length == 1) {
-            delete head_ptr_;
-            head_ptr_ = NULL;
-            tail_ptr_ = NULL;
-            list_length--;
-            return;
-        } else {
-            //1. Make a temporary head ptr and set as current head ptr.
-            node <object> *temp_head_ptr = head_ptr_;
-
-            //2. rearrange the head pointer for the list.
-            head_ptr_ = temp_head_ptr->get_next();
-
-            //3. remove this guy no longer needed.
-            delete temp_head_ptr;
-
-            //4. decrement the list length
-            list_length--;
-
-            //5. set this to null
-            temp_head_ptr = NULL;
-        }
-    }
-
-    template<typename object>
-    void MyPolygons<object>::remove_from_tail() {
-        //if list is empty do nothing. Could use an assert and terminate if someone attempts to remove node from empty list.
-        if (list_length == 0)return;
-
-        else if (list_length == 1) {
-            delete head_ptr_;
-            head_ptr_ = NULL;
-            tail_ptr_ = NULL;
-            list_length--;
-            return;
-        } else {
-            //1. Make a temporary tail ptr and set as current tail.
-            node <object> *temp_tail_ptr = tail_ptr_;
-
-            //2. rearrange the tail pointer for the list.
-            tail_ptr_ = temp_tail_ptr->get_previous();
-
-            //3. remove this guy no longer needed.
-            delete temp_tail_ptr;
-
-            //4. decrement the list length
-            list_length--;
-
-            //5. set this to null
-            temp_tail_ptr = NULL;
-        }
+        //pop that badboi in the list yo.
+        add(data);
     }
 
     template<typename object>
@@ -162,53 +60,27 @@ namespace tom_ass1
         return *current_ptr_;
     }
 
-//    template<typename object>
-//    bool MyPolygons<object>::remove(std::string card_name) {
-//        //if list is empty just exit.
-//        if (list_length == 0)return false;
-//        else {
-//            //search starts at head.
-//            node <object> *position_ptr_ = head_ptr_;
-//            int counter = 0;
-//            //for loop searches for matching card face and assigns position pointer to it.
-//            for (unsigned char i = 0; i < list_length; i++) {
-//                counter++;
-//                if (position_ptr_->get_data().get_face() == card_name) {
-//                    //exists for-loop. current_ptr_ now points to position.
-//                    i = list_length;
-//                }
-//                    //will continue searching for correct node
-//                else position_ptr_ = position_ptr_->get_next();
-//
-//            }
-//            //if card is head.
-//            if (position_ptr_ == head_ptr_) {
-//                remove_from_head();
-//                return true;
-//
-//            }
-//                //card is tail.
-//            else if (position_ptr_ == tail_ptr_) {
-//                remove_from_tail();
-//                return true;
-//            } else {
-//
-//                //assigning previous and next nodes.
-//                node <object> *ahead = position_ptr_->get_next();
-//                node <object> *behind = position_ptr_->get_previous();
-//
-//                //assigning links  between nodes.
-//                ahead->set_previous(behind);
-//                behind->set_next(ahead);
-//
-//                list_length--;
-//                return true;
-//
-//
-//            }
-//        }
-//    }
-//
+    template<typename object>
+    void MyPolygons<object>::add(object &data)
+    {
+        //1. create new node on heap
+        node <object> *freshNode = new node<object>(data);
+        //set the next pointer of new node to the next of the sentinel.
+        freshNode->set_next(current_ptr_->get_next());
+        //set the previous node of the new node to the sentinel. It is now positioned where the head would be. Good.
+        freshNode->set_previous(current_ptr_);
+        //Set the sentinels next's previous to be the new Node.
+        current_ptr_->get_next()->set_previous(freshNode);
+        //Set the sentinel's next to be the new node.
+        sentinel->set_next(freshNode);
+        //set current to the new node.
+        current_ptr_=freshNode;
+
+        //increment the ol' listo.
+        list_length++;
+
+    }
+
     template<typename object>
     void MyPolygons<object>::forward() {
         current_ptr_ = current_ptr_->get_next();
@@ -224,90 +96,58 @@ namespace tom_ass1
         current_ptr_= sentinel;
     }
 
-//
-//    template<typename object>
-//    void MyPolygons<object>::move_to_head() {
-//        current_ptr_ = head_ptr_;
-//    }
-//
-//    template<typename object>
-//    void MyPolygons<object>::move_to_tail() {
-//        current_ptr_ = tail_ptr_;
-//    }
-//
-////postcondition: Returns true is MyPolygons has nodes else returns false.
-//    template<typename object>
-//    bool MyPolygons<object>::empty() {
-//        return (list_length > 0);
-//    }
-//
-////traverses whole deck searching for matching string, returns that position.
-//    template<typename object>
-//    int MyPolygons<object>::position(std::string card_name) {
-//        //pointer starts at head and traverse contents of list until it finds.
-//        node <object> *temp_ptr = head_ptr_;
-//
-//
-//        for (unsigned char i = 0; i < list_length; i++) {
-//            if (temp_ptr->get_data().get_face() == card_name) {
-//                //delete temp_ptr;
-//
-//                return i;
-//            } else temp_ptr = temp_ptr->get_next();
-//        }
-//
-//        return -1;
-//
-//    }
-//
-//    template<typename object>
-//    object MyPolygons<object>::get_current() {
-//        return current_ptr_->get_data();
-//    }
-//
-//    template<typename object>
-//    std::size_t MyPolygons<object>::length() {
-//        return list_length;
-//    }
-//
-//    template<typename object>
-//    void MyPolygons<object>::shuffle() {
-//
-//        unsigned char i = list_length;
-//
-//        //start at tail
-//        node <object> *traverse_ptr = tail_ptr_;
-//        //node preserves the data before swapping
-//        node <object> hold = *tail_ptr_;
-//
-//
-//        //cycles through cards starting at tail until null.
-//        for (; traverse_ptr != NULL; traverse_ptr = traverse_ptr->get_previous()) {
-//            //resetting current_ptr to count from head again
-//            move_to_head();
-//            //controls swap loop
-//            int k = rand() % i;
-//            int j = 0;
-//            //this loop decides which card is getting swapped with current temp.
-//            while (j < k) {
-//                //select card to be swapped with tail
-//                current_ptr_ = current_ptr_->get_next();
-//
-//                j++;
-//            }
-//            //making copy of pointer. Hanging onto temp_ptr so can return to where was up to.
-//            hold = *traverse_ptr;
-//
-//            //SWAPPING
-//            //put selected card data into where temp is pointing.
-//            traverse_ptr->set_data(current_ptr_->get_data());
-//            //move traverse data into selected card
-//            current_ptr_->set_data(hold.get_data());
-//
-//            i--;
-//
-//        }
+    template<typename object>
+    void MyPolygons<object>::insert(int position,object& data)
+    {
+        //reset the position of the current pointer to have a starting point.
+        reset();
+        //cycle through the linked list until the position is reached.
+        for(int i = 0;i<position;i++)
+        {
+            //will cycle the current pointer forward to the position.
+            forward();
+        }
+        //Position is now reached so add the new node.
+        add(data);
+    }
 
+    template<typename object>
+    node<object> MyPolygons<object>::pop()
+    {
+        //Create a pointer to store the retrieved head in.
+        node<object> theHead;
+        //retrieve the head.
+        theHead = getHead();
+        //delete the head.
+        deleteHead();
 
+        return theHead;
+    }
+
+    template<typename object>
+    node<object> MyPolygons<object>::getHead()
+    {
+        //make the current the next of the sentinel (aka the head).
+        current_ptr_ = sentinel->get_next();
+
+        //return the node stored at the current, spoiler it's the head.
+        return getNode();
+
+    }
+
+    template<typename object>
+    void MyPolygons<object>::deleteHead()
+    {
+        //set the current to the sentinel.
+        reset();
+        //Set the current to the head.
+        forward();
+        //Set the heads previous' next to the heads next. So splice out the previous' life.
+        current_ptr_->get_previous()->set_next(current_ptr_->get_next());
+        //Set the head's next to it's previous. So splice it out of the next's life.
+        current_ptr_->get_next()->set_previous(current_ptr_->get_previous());
+        //move the current pointer forward so that is no longer pointed at the node.
+        forward();
+    }
 
 }

@@ -14,24 +14,19 @@ namespace tom_ass1
     {
     public:
 
-        //Constructor
-        MyPolygons();										//default
-//        MyPolygons(object& data);						//taking parameters.
 
-//
-//        //destructor
-//        ~MyPolygons();
-//
-//        //member functions
+        MyPolygons();										//default
+//      MyPolygons(object& data);						//taking parameters.
+
+        //destructor
+//      ~MyPolygons();
+
+        //MEMBER FUNCTIONS
 
         //adds an object to the head of the list. This object is now the new head.
         void add_to_head(object& data);
         //adds an object to the tail of the list. This object is now the new tail.
         void add_to_tail(object& data);
-        //Remove the head.
-        void remove_from_head();
-        //Remove the tail.
-        void remove_from_tail();
         //Moves the "current" pointer forward to the next node.
         void forward();
         //Moves the "current" pointer backwards to the previous node.
@@ -40,17 +35,16 @@ namespace tom_ass1
         void reset();
         //Return the node that is stored at current.
         node<object> getNode();
-
-
-//        void move_to_head();
-//        void move_to_tail();
-//        bool empty();
-//        int position(std::string card_name);
-//        bool remove(std::string card_name);
-//        void shuffle();
-//        object get_current();
-//        std::size_t length();
-
+        //add the item in, all that needs to be changed before hand is where you want it place by moving current.
+        void add(object& data);
+        //insert the a node at a position (int position) in the list.
+        void insert(int position, object& data);
+        //"pops" the head off of the list.
+        node<object> pop();
+        //Returns the head of the linked list.
+        node<object> getHead();
+        //Deletes the head of the list.
+        void deleteHead();
 
 
     private:
