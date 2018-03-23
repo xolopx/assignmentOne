@@ -23,6 +23,9 @@ namespace tom_ass1
 			node();			//No arguments
 			explicit node(const object& init_data);	//One argument
 
+			//Destructor
+//			~node();
+
 			
 			//Member functions
 			void set_data(const object& new_data); 		

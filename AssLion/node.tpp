@@ -20,6 +20,15 @@ namespace tom_ass1
 		next = NULL;//init_next;
 		previous = NULL; //init_previous;
 	}
+
+//	template<typename object>
+//	node<object>::~node() {
+//
+//
+////		delete next;
+////		delete previous;
+//
+//	}
 	
 	template <typename object>
 	void node<object>::set_data(const object& new_data) 			{data = new_data;}
@@ -44,4 +53,6 @@ namespace tom_ass1
 	
 	template <typename object>
 	node<object>* node<object>::get_next()							{return next;}
+
+
 }

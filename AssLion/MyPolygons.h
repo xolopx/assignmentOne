@@ -19,7 +19,7 @@ namespace tom_ass1
 //      MyPolygons(object& data);						//taking parameters.
 
         //destructor
-//      ~MyPolygons();
+//       ~MyPolygons();
 
         //MEMBER FUNCTIONS
 

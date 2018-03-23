@@ -123,6 +123,33 @@ AssLion/fast:
 	$(MAKE) -f CMakeFiles/AssLion.dir/build.make CMakeFiles/AssLion.dir/build
 .PHONY : AssLion/fast
 
+ComparePoly.o: ComparePoly.cpp.o
+
+.PHONY : ComparePoly.o
+
+# target to build an object file
+ComparePoly.cpp.o:
+	$(MAKE) -f CMakeFiles/AssLion.dir/build.make CMakeFiles/AssLion.dir/ComparePoly.cpp.o
+.PHONY : ComparePoly.cpp.o
+
+ComparePoly.i: ComparePoly.cpp.i
+
+.PHONY : ComparePoly.i
+
+# target to preprocess a source file
+ComparePoly.cpp.i:
+	$(MAKE) -f CMakeFiles/AssLion.dir/build.make CMakeFiles/AssLion.dir/ComparePoly.cpp.i
+.PHONY : ComparePoly.cpp.i
+
+ComparePoly.s: ComparePoly.cpp.s
+
+.PHONY : ComparePoly.s
+
+# target to generate assembly for a file
+ComparePoly.cpp.s:
+	$(MAKE) -f CMakeFiles/AssLion.dir/build.make CMakeFiles/AssLion.dir/ComparePoly.cpp.s
+.PHONY : ComparePoly.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -213,6 +240,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... AssLion"
+	@echo "... ComparePoly.o"
+	@echo "... ComparePoly.i"
+	@echo "... ComparePoly.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

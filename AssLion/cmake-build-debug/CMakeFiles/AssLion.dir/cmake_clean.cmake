@@ -2,6 +2,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/AssLion.dir/main.cpp.o"
   "CMakeFiles/AssLion.dir/point.cpp.o"
   "CMakeFiles/AssLion.dir/polygon.cpp.o"
+  "CMakeFiles/AssLion.dir/ComparePoly.cpp.o"
   "AssLion.pdb"
   "AssLion.exe"
   "libAssLion.dll.a"

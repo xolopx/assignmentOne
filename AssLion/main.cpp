@@ -9,6 +9,7 @@ int main()
     //The list into which all polygons will be stored.
     MyPolygons<polygon>* theList = new MyPolygons<polygon>();
 
+
     //create a placeholder string for read in characters.
     std::string character;
     //create a stream to the data file.
@@ -60,18 +61,14 @@ int main()
             aPolygon->getPoint(numPoints)->setPoints(x,y);
             //store the polygon in the list.
             theList->add_to_head(*aPolygon);
-
-
-
         }
-
     }//end while loop.
-    for(int i = 0; i<theList->getSize();i++)
-    {
-        std::cout<<theList->getNode().get_data()->polyToString()<<std::endl;
-        theList->forward();
-    }
 
+//    for(int i = 0; i<theList->getSize();i++) {
+//        std::cout << theList->getNode().get_data()->polyToString() << std::endl;
+//        theList->forward();
+//    }
+    
     return 0;
 }
 

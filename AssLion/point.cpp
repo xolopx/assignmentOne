@@ -1,6 +1,9 @@
 #include "point.h"
 #include <cmath>
 #include <iostream>
+#include <iomanip>
+#include <sstream>
+#include <stdio.h>
 
 
 
@@ -12,6 +15,7 @@ namespace tom_ass1
 		x = 0;
 		 
 	}
+
 	void point::setPoints(double xCoord, double yCoord)
 	{
 
@@ -22,14 +26,12 @@ namespace tom_ass1
 
 	std::string point::pointToString()
 	{
-		//In c++11 there is a sweet to_string function. 
-		std::string xCoord = std::to_string(x);
-		std::string yCoord = std::to_string(y);
+		char buffer[11];
 		//putting it together.
-		std::string theOutput = "(" + xCoord + "," + yCoord + ")";
+		sprintf(buffer,"(%4.2f,%4.2f)" , x, y);
 
+		return buffer;
 
-		return theOutput;
 	}
 	//Sets the x-coordinate of point.
 	void point::setX(double xCoord)
@@ -57,5 +59,7 @@ namespace tom_ass1
 	{
 		return y;
 	}
+
+
 
 }

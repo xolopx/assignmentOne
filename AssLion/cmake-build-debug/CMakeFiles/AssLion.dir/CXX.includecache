@@ -6,6 +6,12 @@
 
 #IncludeRegexTransform: 
 
+/cygdrive/c/Users/tom/Google Drive/University/2018/sem 1/SENG2200/Assignments/assignmentOne/AssLion/ComparePoly.cpp
+ComparePoly.h
+/cygdrive/c/Users/tom/Google Drive/University/2018/sem 1/SENG2200/Assignments/assignmentOne/AssLion/ComparePoly.h
+
+/cygdrive/c/Users/tom/Google Drive/University/2018/sem 1/SENG2200/Assignments/assignmentOne/AssLion/ComparePoly.h
+
 /cygdrive/c/Users/tom/Google Drive/University/2018/sem 1/SENG2200/Assignments/assignmentOne/AssLion/MyPolygons.h
 cstdlib
 -
@@ -45,6 +51,12 @@ cmath
 -
 iostream
 -
+iomanip
+-
+sstream
+-
+stdio.h
+-
 
 /cygdrive/c/Users/tom/Google Drive/University/2018/sem 1/SENG2200/Assignments/assignmentOne/AssLion/point.h
 string
@@ -55,10 +67,16 @@ polygon.h
 /cygdrive/c/Users/tom/Google Drive/University/2018/sem 1/SENG2200/Assignments/assignmentOne/AssLion/polygon.h
 cmath
 -
+sstream
+-
+iomanip
+-
 
 /cygdrive/c/Users/tom/Google Drive/University/2018/sem 1/SENG2200/Assignments/assignmentOne/AssLion/polygon.h
 point.h
 /cygdrive/c/Users/tom/Google Drive/University/2018/sem 1/SENG2200/Assignments/assignmentOne/AssLion/point.h
+ComparePoly.h
+/cygdrive/c/Users/tom/Google Drive/University/2018/sem 1/SENG2200/Assignments/assignmentOne/AssLion/ComparePoly.h
 string
 -
 iostream

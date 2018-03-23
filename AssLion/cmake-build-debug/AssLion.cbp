@@ -80,6 +80,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/cygdrive/c/Users/tom/Google Drive/University/2018/sem 1/SENG2200/Assignments/assignmentOne/AssLion/ComparePoly.cpp">
+			<Option target="AssLion"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/tom/Google Drive/University/2018/sem 1/SENG2200/Assignments/assignmentOne/AssLion/ComparePoly.h">
+			<Option target="AssLion"/>
+		</Unit>
 		<Unit filename="/cygdrive/c/Users/tom/Google Drive/University/2018/sem 1/SENG2200/Assignments/assignmentOne/AssLion/MyPolygons.h">
 			<Option target="AssLion"/>
 		</Unit>

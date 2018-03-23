@@ -1,5 +1,8 @@
 #include "polygon.h"
 #include <cmath>
+#include <sstream>
+#include <iomanip>
+
 namespace tom_ass1
 {
 
@@ -30,6 +33,12 @@ namespace tom_ass1
 
         }
     }
+//    polygon::~polygon() {
+//
+//
+//       // delete sequence;
+//
+//    }
 
 	//Will return a point in a location in sequence array. It will return a pointer to a point.
 	point* polygon::getPoint(int index)
@@ -41,19 +50,28 @@ namespace tom_ass1
 	std::string polygon::polyToString()
 	{
 
+        std::stringstream stream;
+
+
         std::string theString = "[";
 
         for(int i = 0; i<pointNum-1; i++)
         {
+            //adding the points to the string.
             theString += (sequence[i].pointToString());
-            if(i!=(pointNum-1))
+            if(i!=(pointNum-2))
             {
                 theString += ",";
             }
         }
+        char buffer[5];
+        //Formatting the area.
+        sprintf(buffer, "%5.2f" , calcArea());
 
-        std::string area = std::to_string(calcArea());
-        theString += "]: " + area;
+        std::string finalResult = buffer;
+
+
+        theString += "]: " + finalResult;
 
 
 
@@ -62,21 +80,21 @@ namespace tom_ass1
 
 	//Calculates the area inside of the polygon.
 	double polygon::calcArea()
-	{
-    double area = 0;
-    double interimResult = 0;
-    //"n" form the formula is 1 more than the number of points on the polygon. This is not considered anywhere so we
-    // modify the formula to be (n-1) instead of (n-2).
+    {
+        double area = 0;
+        double interimResult = 0;
+        //"n" form the formula is 1 more than the number of points on the polygon. This is not considered anywhere so we
+        // modify the formula to be (n-1) instead of (n-2).
 
-    for (int i = 0; i < (pointNum); i++)
-{
-    interimResult = (sequence[i+1].getX()+sequence[i].getX())*(sequence[i+1].getY()-sequence[i].getY());
-//            std::cout<< interimResult<<std::endl;
-    area += interimResult;
-}
+        for (int i = 0; i < (pointNum); i++)
+        {
+            interimResult = (sequence[i+1].getX()+sequence[i].getX())*(sequence[i+1].getY()-sequence[i].getY());
 
-return (0.5*abs(area));
-}
+            area += interimResult;
+        }
+
+        return (0.5*fabs(area));
+    }
 
     //Returns the distance of the point closest to the origin. For some reason.
     double polygon::closestOrigin()
@@ -94,4 +112,17 @@ return (0.5*abs(area));
 
         return distance;
     }
+
+    //overloaded interface method.
+    bool polygon::compare(polygon &theGon)
+    {
+        //In all of these cases we regard the theGon as larger than the polygon that it's being compared to.
+        if(theGon.calcArea() >= calcArea() || theGon.calcArea()/calcArea() == 0.05 || theGon.calcArea()/calcArea() == 0.95)
+        {
+            return true;
+        }
+        else return false;
+    }
+
+
 }

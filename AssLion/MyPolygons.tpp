@@ -17,6 +17,14 @@ namespace tom_ass1
         //We will call the list length zero because the sentinel has no data in it.
         list_length = 0;
     }
+//    template<typename object>
+//    MyPolygons<object>::~MyPolygons() {
+//        delete sentinel;
+//        delete head_ptr_;
+//        delete tail_ptr_;
+//        delete current_ptr_;
+//
+//    }
 
     //This commented out section has the 1 argument constructor and the destructor in it.
 /*
@@ -153,5 +161,7 @@ namespace tom_ass1
     int MyPolygons<object>::getSize() {
         return list_length;
     }
+
+
 
 }
