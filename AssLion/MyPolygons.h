@@ -45,6 +45,8 @@ namespace tom_ass1
         node<object> getHead();
         //Deletes the head of the list.
         void deleteHead();
+        //Get the size of the list
+        int getSize();
 
 
     private:

@@ -150,4 +150,9 @@ namespace tom_ass1
         forward();
     }
 
+    template<typename object>
+    int MyPolygons<object>::getSize() {
+        return list_length;
+    }
+
 }
