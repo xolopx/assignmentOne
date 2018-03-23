@@ -43,7 +43,7 @@ namespace tom_ass1
 
         std::string theString = "[";
 
-        for(int i = 0; i<pointNum; i++)
+        for(int i = 0; i<pointNum-1; i++)
         {
             theString += (sequence[i].pointToString());
             if(i!=(pointNum-1))

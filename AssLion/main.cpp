@@ -60,11 +60,15 @@ int main()
             aPolygon->getPoint(numPoints)->setPoints(x,y);
             //store the polygon in the list.
             theList->add_to_head(*aPolygon);
+
+
+
         }
-    }
+
+    }//end while loop.
     for(int i = 0; i<theList->getSize();i++)
     {
-        std::cout<<theList->getHead().get_data()->polyToString()<<std::endl;
+        std::cout<<theList->getNode().get_data()->polyToString()<<std::endl;
         theList->forward();
     }
 

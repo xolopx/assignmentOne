@@ -75,7 +75,6 @@ namespace tom_ass1
         sentinel->set_next(freshNode);
         //set current to the new node.
         current_ptr_=freshNode;
-
         //increment the ol' listo.
         list_length++;
 
