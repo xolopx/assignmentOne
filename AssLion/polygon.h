@@ -32,7 +32,7 @@ namespace tom_ass1
         //Returns the distance of the point closest to the origin. For some reason.
         double closestOrigin();
 
-		//Overloaded method form interface.
+		//Overloaded method form interface. Passed a new polygon and compares to the subject.
 		virtual bool compare(polygon &theGon);
 
 	private:

@@ -63,12 +63,44 @@ int main()
             theList->add_to_head(*aPolygon);
         }
     }//end while loop.
+    std::cout<<"The Unsorted List"<<std::endl;
+    for(int i = 0; i<theList->getSize();i++) {
 
-//    for(int i = 0; i<theList->getSize();i++) {
-//        std::cout << theList->getNode().get_data()->polyToString() << std::endl;
-//        theList->forward();
-//    }
-    
+        std::cout << theList->getNode().get_data()->polyToString() << std::endl;
+        theList->forward();
+    }
+    std::cout<<std::endl<<std::endl;
+
+    //Time to bubble sort baby!!
+
+    //This is the new list that the old list is to be sorted into.
+    MyPolygons<polygon>* sortedList = new MyPolygons<polygon>();
+
+    //Polygon is the head of the list initially.
+    polygon* largest = theList->getHead().get_data();
+    //The challenger.
+    polygon* contestant;
+
+
+    int i = 0;
+    //Find the largest polygon in the list.
+    while(i < (theList->getSize()-1))
+    {
+        //cycle through
+        theList->forward();
+        //The polygon getting tested if it's largest.
+        contestant = theList->getNode().get_data();
+        //If true, then the contestant is larger than largest.
+        if (largest->compare(*contestant)) {
+            //contestant has won.
+            largest = contestant;
+        }
+        i++;
+
+    }//end while loop.
+
+    std::cout<<largest->polyToString()<<std::endl;
+
     return 0;
 }
 
