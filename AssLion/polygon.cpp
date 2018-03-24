@@ -116,11 +116,18 @@ namespace tom_ass1
     //overloaded interface method.
     bool polygon::compare(polygon &newPolygon)
     {
-        //If the newPolygon is larger than the one in question return true.
-        if(newPolygon.calcArea() >= calcArea())
+        double areaOld = calcArea();
+        double areaNew = newPolygon.calcArea();
+        //If the newPolyogn has a larger or equal area it is deemed larger.
+        if(areaNew >= areaOld) {
+            return true;
+        }
+        //OR it's within 0.05% lol.
+        else if((areaOld - (0.0005*areaOld))<= areaNew && areaNew <= ((areaOld + 0.0005*areaOld)))
         {
             return true;
         }
+        //If it is not then it is smaller.
         else return false;
     }
 

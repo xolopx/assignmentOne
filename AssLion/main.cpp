@@ -3,13 +3,46 @@
 #include "polygon.h"
 #include "MyPolygons.h"
 
+//This needs to be above function declarations so that they know what the return type is.
 using namespace tom_ass1;
+
+//Reads data into a MyPolygons list.
+MyPolygons<polygon>* reader(MyPolygons<polygon> *theList, const char *theFile);
+
+//Prints out the contents of a list.
+void printList(MyPolygons<polygon>* aList);
+
+//Takes in an unsorted list and sorts it into a new list.
+MyPolygons<polygon>* sorter(MyPolygons<polygon>* unsortedList, MyPolygons<polygon>* sortedList);
+
+
 int main()
 {
-    //The list into which all polygons will be stored.
-    MyPolygons<polygon>* theList = new MyPolygons<polygon>();
+    //The list into which values shall be read.
+    MyPolygons<polygon>* unsortedList = new MyPolygons<polygon>();
+    //Read the values in the list.
+    unsortedList = reader(unsortedList,"data.txt");
 
 
+    //Print out the unsorted list.
+    std::cout<<"The Unsorted List"<<std::endl;
+    printList(unsortedList);
+
+    //New list to sort items into.
+    MyPolygons<polygon>* sortedList = new MyPolygons<polygon>();
+    //Sort the bad boy.
+    sortedList = sorter(unsortedList,sortedList);
+    std::cout<<"Sorted List"<<std::endl;
+    printList(sortedList);
+
+    return 0;
+}
+
+
+
+
+MyPolygons<polygon>* reader (MyPolygons<polygon>* theList, const char* theFile)
+{
     //create a placeholder string for read in characters.
     std::string character;
     //create a stream to the data file.
@@ -21,7 +54,7 @@ int main()
     //The variables into which the points will be stored.
     double x,y = 0;
     //open the stream.
-    fileStream.open("data.txt");
+    fileStream.open(theFile);
 
     //While the file is not empty.
     while(!fileStream.eof())
@@ -63,46 +96,97 @@ int main()
             theList->add_to_head(*aPolygon);
         }
     }//end while loop.
-    std::cout<<"The Unsorted List"<<std::endl;
-    for(int i = 0; i<theList->getSize();i++) {
 
-        std::cout << theList->getNode().get_data()->polyToString() << std::endl;
-        theList->forward();
-    }
-    std::cout<<std::endl<<std::endl;
-
-    //Time to bubble sort baby!!
-
-    //This is the new list that the old list is to be sorted into.
-    MyPolygons<polygon>* sortedList = new MyPolygons<polygon>();
-
-    //Polygon is the head of the list initially.
-    polygon* largest = theList->getHead().get_data();
-    //The challenger.
-    polygon* contestant;
-
-
-    int i = 0;
-    //Find the largest polygon in the list.
-    while(i < (theList->getSize()-1))
-    {
-        //cycle through
-        theList->forward();
-        //The polygon getting tested if it's largest.
-        contestant = theList->getNode().get_data();
-        //If true, then the contestant is larger than largest.
-        if (largest->compare(*contestant)) {
-            //contestant has won.
-            largest = contestant;
-        }
-        i++;
-
-    }//end while loop.
-
-    std::cout<<largest->polyToString()<<std::endl;
-
-    return 0;
+    return theList;
 }
 
+void printList(MyPolygons<polygon>* aList)
+{
+    //Current to sentinel.
+    aList->reset();
+    //Current to head.
+    aList->forward();
+    for(int i = 0; i<aList->getSize();i++) {
+
+        std::cout << aList->getNode().get_data()->polyToString() << std::endl;
+        aList->forward();
+    }
+    std::cout<<std::endl<<std::endl;
+}
+
+MyPolygons<polygon>* sorter(MyPolygons<polygon>* unsortedList, MyPolygons<polygon>* sortedList)
+{
+
+    //Start by setting the current largest to the head of the unsorted list.
+    //  NB: getHead will reset the current ptr to head.
+    polygon currentLargest = *unsortedList->getHead().get_data();
+    //we set to current largest by default for cheekyCounter to work.
+    polygon challengerPolygon = currentLargest;
+    //This counter determines which node was largest and then removes it from the unsortedList.
+    int cheekyCounter = 1;
+    //Tracks the position of the latest largest.
+    int thePosition = 0;
+    //Need the list length to know how many times to compare.
+    int listLength = unsortedList->getSize();
 
 
+
+    while(listLength!=0)
+    {
+
+        //Restarting process. getHead resets the current.
+        currentLargest = *unsortedList->getHead().get_data();
+        challengerPolygon = currentLargest;
+
+
+        //length - 1 as we are in position one when we enter the for loop.
+        for (int i = 0; i < unsortedList->getSize(); i++)
+        {
+            //If this is true the challenger is larger.
+            if (currentLargest.compare(challengerPolygon))
+            {
+                //We should get in here at least once.
+                currentLargest = challengerPolygon;
+                //We know that the position of the latest largest is at cheekyCounter.
+                thePosition = cheekyCounter;
+            }
+            //continue through the list.
+            unsortedList->forward();
+            cheekyCounter++;
+            //Get the next polygon.
+            challengerPolygon = *unsortedList->getNode().get_data();
+        }
+
+
+        //Removal and insertion of largest.
+        sortedList->add(currentLargest);
+        //Reset current to sentinel.
+        unsortedList->reset();
+
+
+        //Cycle through the list until we find the node we are looking for.
+        for (int i = 0; i < thePosition; i++)
+        {
+            //Move current forward to the largest node.
+            unsortedList->forward();
+        }
+        //removes the node at current. Reduces the length of the list.
+        unsortedList->remove();
+
+
+
+
+        //Reset. SHOULD BE ONE.
+        cheekyCounter = 1;
+        //Reset
+        thePosition = 0;
+        //Update
+        listLength = unsortedList->getSize();
+        //Reset
+        sortedList->reset();
+        //Reset
+        unsortedList->reset();
+    }
+
+    return sortedList;
+}

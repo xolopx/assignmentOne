@@ -1,4 +1,4 @@
-# Install script for directory: /cygdrive/c/Users/Tom/Google Drive/University/2018/sem 1/SENG2200/Assignments/assignmentOne/AssLion
+# Install script for directory: /cygdrive/c/Users/tom/Google Drive/University/2018/sem 1/SENG2200/Assignments/assignmentOne/AssLion
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -35,5 +35,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/cygdrive/c/Users/Tom/Google Drive/University/2018/sem 1/SENG2200/Assignments/assignmentOne/AssLion/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/cygdrive/c/Users/tom/Google Drive/University/2018/sem 1/SENG2200/Assignments/assignmentOne/AssLion/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

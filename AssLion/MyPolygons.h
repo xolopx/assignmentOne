@@ -47,6 +47,8 @@ namespace tom_ass1
         void deleteHead();
         //Get the size of the list
         int getSize();
+        //Removes the node at current.
+        void remove();
 
 
     private:

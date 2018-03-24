@@ -8,38 +8,38 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/cygdrive/c/Users/tom/Google Drive/University/2018/sem 1/SENG2200/Assignments/assignmentOne/AssLion/cmake-build-debug"/>
+				<Option working_dir="/cygdrive/c/Users/Tom/Google Drive/University/2018/sem 1/SENG2200/Assignments/assignmentOne/AssLion/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/tom/Google\ Drive/University/2018/sem\ 1/SENG2200/Assignments/assignmentOne/AssLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/tom/Google\ Drive/University/2018/sem\ 1/SENG2200/Assignments/assignmentOne/AssLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/tom/Google\ Drive/University/2018/sem\ 1/SENG2200/Assignments/assignmentOne/AssLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/tom/Google\ Drive/University/2018/sem\ 1/SENG2200/Assignments/assignmentOne/AssLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/Tom/Google\ Drive/University/2018/sem\ 1/SENG2200/Assignments/assignmentOne/AssLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/Tom/Google\ Drive/University/2018/sem\ 1/SENG2200/Assignments/assignmentOne/AssLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/Tom/Google\ Drive/University/2018/sem\ 1/SENG2200/Assignments/assignmentOne/AssLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/Tom/Google\ Drive/University/2018/sem\ 1/SENG2200/Assignments/assignmentOne/AssLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/cygdrive/c/Users/tom/Google Drive/University/2018/sem 1/SENG2200/Assignments/assignmentOne/AssLion/cmake-build-debug"/>
+				<Option working_dir="/cygdrive/c/Users/Tom/Google Drive/University/2018/sem 1/SENG2200/Assignments/assignmentOne/AssLion/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/tom/Google\ Drive/University/2018/sem\ 1/SENG2200/Assignments/assignmentOne/AssLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/tom/Google\ Drive/University/2018/sem\ 1/SENG2200/Assignments/assignmentOne/AssLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/tom/Google\ Drive/University/2018/sem\ 1/SENG2200/Assignments/assignmentOne/AssLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/tom/Google\ Drive/University/2018/sem\ 1/SENG2200/Assignments/assignmentOne/AssLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/Tom/Google\ Drive/University/2018/sem\ 1/SENG2200/Assignments/assignmentOne/AssLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/Tom/Google\ Drive/University/2018/sem\ 1/SENG2200/Assignments/assignmentOne/AssLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/Tom/Google\ Drive/University/2018/sem\ 1/SENG2200/Assignments/assignmentOne/AssLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/Tom/Google\ Drive/University/2018/sem\ 1/SENG2200/Assignments/assignmentOne/AssLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/cygdrive/c/Users/tom/Google Drive/University/2018/sem 1/SENG2200/Assignments/assignmentOne/AssLion/cmake-build-debug"/>
+				<Option working_dir="/cygdrive/c/Users/Tom/Google Drive/University/2018/sem 1/SENG2200/Assignments/assignmentOne/AssLion/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/tom/Google\ Drive/University/2018/sem\ 1/SENG2200/Assignments/assignmentOne/AssLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/tom/Google\ Drive/University/2018/sem\ 1/SENG2200/Assignments/assignmentOne/AssLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/tom/Google\ Drive/University/2018/sem\ 1/SENG2200/Assignments/assignmentOne/AssLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/tom/Google\ Drive/University/2018/sem\ 1/SENG2200/Assignments/assignmentOne/AssLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/Tom/Google\ Drive/University/2018/sem\ 1/SENG2200/Assignments/assignmentOne/AssLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/Tom/Google\ Drive/University/2018/sem\ 1/SENG2200/Assignments/assignmentOne/AssLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/Tom/Google\ Drive/University/2018/sem\ 1/SENG2200/Assignments/assignmentOne/AssLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/Tom/Google\ Drive/University/2018/sem\ 1/SENG2200/Assignments/assignmentOne/AssLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="AssLion">
-				<Option output="/cygdrive/c/Users/tom/Google Drive/University/2018/sem 1/SENG2200/Assignments/assignmentOne/AssLion/cmake-build-debug/AssLion.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/cygdrive/c/Users/tom/Google Drive/University/2018/sem 1/SENG2200/Assignments/assignmentOne/AssLion/cmake-build-debug"/>
+				<Option output="/cygdrive/c/Users/Tom/Google Drive/University/2018/sem 1/SENG2200/Assignments/assignmentOne/AssLion/cmake-build-debug/AssLion.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/c/Users/Tom/Google Drive/University/2018/sem 1/SENG2200/Assignments/assignmentOne/AssLion/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -52,15 +52,15 @@
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/../../../../lib/../include/w32api"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/tom/Google\ Drive/University/2018/sem\ 1/SENG2200/Assignments/assignmentOne/AssLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 AssLion"/>
-					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/tom/Google\ Drive/University/2018/sem\ 1/SENG2200/Assignments/assignmentOne/AssLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/tom/Google\ Drive/University/2018/sem\ 1/SENG2200/Assignments/assignmentOne/AssLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/tom/Google\ Drive/University/2018/sem\ 1/SENG2200/Assignments/assignmentOne/AssLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/Tom/Google\ Drive/University/2018/sem\ 1/SENG2200/Assignments/assignmentOne/AssLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 AssLion"/>
+					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/Tom/Google\ Drive/University/2018/sem\ 1/SENG2200/Assignments/assignmentOne/AssLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/Tom/Google\ Drive/University/2018/sem\ 1/SENG2200/Assignments/assignmentOne/AssLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/Tom/Google\ Drive/University/2018/sem\ 1/SENG2200/Assignments/assignmentOne/AssLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="AssLion/fast">
-				<Option output="/cygdrive/c/Users/tom/Google Drive/University/2018/sem 1/SENG2200/Assignments/assignmentOne/AssLion/cmake-build-debug/AssLion.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/cygdrive/c/Users/tom/Google Drive/University/2018/sem 1/SENG2200/Assignments/assignmentOne/AssLion/cmake-build-debug"/>
+				<Option output="/cygdrive/c/Users/Tom/Google Drive/University/2018/sem 1/SENG2200/Assignments/assignmentOne/AssLion/cmake-build-debug/AssLion.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/c/Users/Tom/Google Drive/University/2018/sem 1/SENG2200/Assignments/assignmentOne/AssLion/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -73,47 +73,47 @@
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/../../../../lib/../include/w32api"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/tom/Google\ Drive/University/2018/sem\ 1/SENG2200/Assignments/assignmentOne/AssLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 AssLion/fast"/>
-					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/tom/Google\ Drive/University/2018/sem\ 1/SENG2200/Assignments/assignmentOne/AssLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/tom/Google\ Drive/University/2018/sem\ 1/SENG2200/Assignments/assignmentOne/AssLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/tom/Google\ Drive/University/2018/sem\ 1/SENG2200/Assignments/assignmentOne/AssLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/Tom/Google\ Drive/University/2018/sem\ 1/SENG2200/Assignments/assignmentOne/AssLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 AssLion/fast"/>
+					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/Tom/Google\ Drive/University/2018/sem\ 1/SENG2200/Assignments/assignmentOne/AssLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/Tom/Google\ Drive/University/2018/sem\ 1/SENG2200/Assignments/assignmentOne/AssLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/Tom/Google\ Drive/University/2018/sem\ 1/SENG2200/Assignments/assignmentOne/AssLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/cygdrive/c/Users/tom/Google Drive/University/2018/sem 1/SENG2200/Assignments/assignmentOne/AssLion/ComparePoly.cpp">
+		<Unit filename="/cygdrive/c/Users/Tom/Google Drive/University/2018/sem 1/SENG2200/Assignments/assignmentOne/AssLion/ComparePoly.cpp">
 			<Option target="AssLion"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/tom/Google Drive/University/2018/sem 1/SENG2200/Assignments/assignmentOne/AssLion/ComparePoly.h">
+		<Unit filename="/cygdrive/c/Users/Tom/Google Drive/University/2018/sem 1/SENG2200/Assignments/assignmentOne/AssLion/ComparePoly.h">
 			<Option target="AssLion"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/tom/Google Drive/University/2018/sem 1/SENG2200/Assignments/assignmentOne/AssLion/MyPolygons.h">
+		<Unit filename="/cygdrive/c/Users/Tom/Google Drive/University/2018/sem 1/SENG2200/Assignments/assignmentOne/AssLion/MyPolygons.h">
 			<Option target="AssLion"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/tom/Google Drive/University/2018/sem 1/SENG2200/Assignments/assignmentOne/AssLion/MyPolygons.tpp">
+		<Unit filename="/cygdrive/c/Users/Tom/Google Drive/University/2018/sem 1/SENG2200/Assignments/assignmentOne/AssLion/MyPolygons.tpp">
 			<Option target="AssLion"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/tom/Google Drive/University/2018/sem 1/SENG2200/Assignments/assignmentOne/AssLion/main.cpp">
+		<Unit filename="/cygdrive/c/Users/Tom/Google Drive/University/2018/sem 1/SENG2200/Assignments/assignmentOne/AssLion/main.cpp">
 			<Option target="AssLion"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/tom/Google Drive/University/2018/sem 1/SENG2200/Assignments/assignmentOne/AssLion/node.h">
+		<Unit filename="/cygdrive/c/Users/Tom/Google Drive/University/2018/sem 1/SENG2200/Assignments/assignmentOne/AssLion/node.h">
 			<Option target="AssLion"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/tom/Google Drive/University/2018/sem 1/SENG2200/Assignments/assignmentOne/AssLion/node.tpp">
+		<Unit filename="/cygdrive/c/Users/Tom/Google Drive/University/2018/sem 1/SENG2200/Assignments/assignmentOne/AssLion/node.tpp">
 			<Option target="AssLion"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/tom/Google Drive/University/2018/sem 1/SENG2200/Assignments/assignmentOne/AssLion/point.cpp">
+		<Unit filename="/cygdrive/c/Users/Tom/Google Drive/University/2018/sem 1/SENG2200/Assignments/assignmentOne/AssLion/point.cpp">
 			<Option target="AssLion"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/tom/Google Drive/University/2018/sem 1/SENG2200/Assignments/assignmentOne/AssLion/point.h">
+		<Unit filename="/cygdrive/c/Users/Tom/Google Drive/University/2018/sem 1/SENG2200/Assignments/assignmentOne/AssLion/point.h">
 			<Option target="AssLion"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/tom/Google Drive/University/2018/sem 1/SENG2200/Assignments/assignmentOne/AssLion/polygon.cpp">
+		<Unit filename="/cygdrive/c/Users/Tom/Google Drive/University/2018/sem 1/SENG2200/Assignments/assignmentOne/AssLion/polygon.cpp">
 			<Option target="AssLion"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/tom/Google Drive/University/2018/sem 1/SENG2200/Assignments/assignmentOne/AssLion/polygon.h">
+		<Unit filename="/cygdrive/c/Users/Tom/Google Drive/University/2018/sem 1/SENG2200/Assignments/assignmentOne/AssLion/polygon.h">
 			<Option target="AssLion"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/tom/Google Drive/University/2018/sem 1/SENG2200/Assignments/assignmentOne/AssLion/CMakeLists.txt">
+		<Unit filename="/cygdrive/c/Users/Tom/Google Drive/University/2018/sem 1/SENG2200/Assignments/assignmentOne/AssLion/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

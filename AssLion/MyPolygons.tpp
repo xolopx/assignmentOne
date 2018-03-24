@@ -82,7 +82,7 @@ namespace tom_ass1
         //Set the sentinel's next to be the new node.
         sentinel->set_next(freshNode);
         //set current to the new node.
-        current_ptr_=freshNode;
+        current_ptr_= freshNode;
         //increment the ol' listo.
         list_length++;
 
@@ -149,12 +149,9 @@ namespace tom_ass1
         reset();
         //Set the current to the head.
         forward();
-        //Set the heads previous' next to the heads next. So splice out the previous' life.
-        current_ptr_->get_previous()->set_next(current_ptr_->get_next());
-        //Set the head's next to it's previous. So splice it out of the next's life.
-        current_ptr_->get_next()->set_previous(current_ptr_->get_previous());
-        //move the current pointer forward so that is no longer pointed at the node.
-        forward();
+        //remove that badboi.
+        remove();
+
     }
 
     template<typename object>
@@ -162,6 +159,23 @@ namespace tom_ass1
         return list_length;
     }
 
+    template<typename object>
+    void MyPolygons<object>::remove() {
 
+        node<object>* pointToOld = current_ptr_;
+
+        //Set the heads previous' next to the heads next. So splice out the previous' life.
+        current_ptr_->get_previous()->set_next(current_ptr_->get_next());
+        //Set the head's next to it's previous. So splice it out of the next's life.
+        current_ptr_->get_next()->set_previous(current_ptr_->get_previous());
+        //Make the next node the current.
+        forward();
+        //decrement length.
+        list_length--;
+        //delete the pointer.
+        delete pointToOld;
+
+
+    }
 
 }

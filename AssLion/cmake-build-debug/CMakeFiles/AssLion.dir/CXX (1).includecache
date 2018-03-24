@@ -1,0 +1,84 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/cygdrive/c/Users/tom/Google Drive/University/2018/sem 1/SENG2200/Assignments/assignmentOne/AssLion/ComparePoly.cpp
+ComparePoly.h
+/cygdrive/c/Users/tom/Google Drive/University/2018/sem 1/SENG2200/Assignments/assignmentOne/AssLion/ComparePoly.h
+
+/cygdrive/c/Users/tom/Google Drive/University/2018/sem 1/SENG2200/Assignments/assignmentOne/AssLion/ComparePoly.h
+
+/cygdrive/c/Users/tom/Google Drive/University/2018/sem 1/SENG2200/Assignments/assignmentOne/AssLion/MyPolygons.h
+cstdlib
+-
+node.h
+/cygdrive/c/Users/tom/Google Drive/University/2018/sem 1/SENG2200/Assignments/assignmentOne/AssLion/node.h
+MyPolygons.tpp
+/cygdrive/c/Users/tom/Google Drive/University/2018/sem 1/SENG2200/Assignments/assignmentOne/AssLion/MyPolygons.tpp
+
+/cygdrive/c/Users/tom/Google Drive/University/2018/sem 1/SENG2200/Assignments/assignmentOne/AssLion/MyPolygons.tpp
+MyPolygons.h
+/cygdrive/c/Users/tom/Google Drive/University/2018/sem 1/SENG2200/Assignments/assignmentOne/AssLion/MyPolygons.h
+
+/cygdrive/c/Users/tom/Google Drive/University/2018/sem 1/SENG2200/Assignments/assignmentOne/AssLion/main.cpp
+iostream
+-
+fstream
+-
+polygon.h
+/cygdrive/c/Users/tom/Google Drive/University/2018/sem 1/SENG2200/Assignments/assignmentOne/AssLion/polygon.h
+MyPolygons.h
+/cygdrive/c/Users/tom/Google Drive/University/2018/sem 1/SENG2200/Assignments/assignmentOne/AssLion/MyPolygons.h
+
+/cygdrive/c/Users/tom/Google Drive/University/2018/sem 1/SENG2200/Assignments/assignmentOne/AssLion/node.h
+cstdlib
+-
+node.tpp
+/cygdrive/c/Users/tom/Google Drive/University/2018/sem 1/SENG2200/Assignments/assignmentOne/AssLion/node.tpp
+
+/cygdrive/c/Users/tom/Google Drive/University/2018/sem 1/SENG2200/Assignments/assignmentOne/AssLion/node.tpp
+node.h
+/cygdrive/c/Users/tom/Google Drive/University/2018/sem 1/SENG2200/Assignments/assignmentOne/AssLion/node.h
+
+/cygdrive/c/Users/tom/Google Drive/University/2018/sem 1/SENG2200/Assignments/assignmentOne/AssLion/point.cpp
+point.h
+/cygdrive/c/Users/tom/Google Drive/University/2018/sem 1/SENG2200/Assignments/assignmentOne/AssLion/point.h
+cmath
+-
+iostream
+-
+iomanip
+-
+sstream
+-
+stdio.h
+-
+
+/cygdrive/c/Users/tom/Google Drive/University/2018/sem 1/SENG2200/Assignments/assignmentOne/AssLion/point.h
+string
+-
+
+/cygdrive/c/Users/tom/Google Drive/University/2018/sem 1/SENG2200/Assignments/assignmentOne/AssLion/polygon.cpp
+polygon.h
+/cygdrive/c/Users/tom/Google Drive/University/2018/sem 1/SENG2200/Assignments/assignmentOne/AssLion/polygon.h
+cmath
+-
+sstream
+-
+iomanip
+-
+
+/cygdrive/c/Users/tom/Google Drive/University/2018/sem 1/SENG2200/Assignments/assignmentOne/AssLion/polygon.h
+point.h
+/cygdrive/c/Users/tom/Google Drive/University/2018/sem 1/SENG2200/Assignments/assignmentOne/AssLion/point.h
+ComparePoly.h
+/cygdrive/c/Users/tom/Google Drive/University/2018/sem 1/SENG2200/Assignments/assignmentOne/AssLion/ComparePoly.h
+string
+-
+iostream
+-
+
